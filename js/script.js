@@ -75,7 +75,7 @@ function displayMovies(movies) {
                 <p>Năm: ${movie.year} | ${movie.genre}</p>
             </div>
         `;
-        // Sự kiện click mở Modal chi tiết phim (Bài 3)
+       
         card.addEventListener("click", () => openModal(movie));
         movieGrid.appendChild(card);
     });
@@ -99,10 +99,12 @@ function setupGenres() {
         chk.addEventListener("change", filterAndSearchMovies);
     });
 }
+
+
 function filterAndSearchMovies() {
     const keyword = searchInput.value.toLowerCase().trim();
     
-    // Lấy danh sách các thể loại đang được tick chọn
+
     const selectedGenres = Array.from(document.querySelectorAll(".genre-checkbox:checked"))
                                 .map(chk => chk.value);
 
@@ -149,6 +151,7 @@ window.addEventListener("click", (e) => {
     }
 });
 
+// Chức năng Light/Dark Mode + localStorage (Bài 3.2)
 function initTheme() {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
