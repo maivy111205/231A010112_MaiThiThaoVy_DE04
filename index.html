@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Discovery App - DE04</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    <header>
+        <div class="logo">🎬 Movie Discovery</div>
+        <div class="header-right">
+            <button id="theme-toggle">🌙 Sáng/Tối</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h3>Bộ lọc tìm kiếm</h3>
+            <div class="filter-group">
+                <label for="search-input">Tìm kiếm phim:</label>
+                <input type="text" id="search-input" placeholder="Nhập tên phim...">
+            </div>
+            
+            <div class="filter-group">
+                <h4>Thể loại</h4>
+                <div id="genre-checkboxes">
+                    <!-- Checkbox thể loại sẽ được sinh tự động bằng JS -->
+                </div>
+            </div>
+            <div class="filter-group prev-links">
+                <h4>Bài tập trước</h4>
+                <a href="https://maivy111205.github.io/Baitap36/" target="_blank">🔗 Bài tập 36 (Deploy)</a>
+            </div>
+        </aside>
+
+        <main class="content">
+            <h2>Danh sách phim</h2>
+            <div id="movie-grid" class="movie-grid">
+  
+            </div>
+        </main>
+    </div>
+
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body" id="modal-body">
+      
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
