@@ -7,7 +7,7 @@ const moviesData = [
         director: "Tomoka Nagaoka",
         cast: "Kappei Yamaguchi, Minami Takayama",
         description: "Thanh kiếm của Shinsengumi liên quan đến một kho báu lớn ở Hakodate bị Kaitou Kid nhắm tới, kéo theo Heiji Hattori và Conan vào cuộc chiến suy luận gay cấn.",
-        poster: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80"
+        poster: "images/conan1.jpg"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const moviesData = [
         director: "Yuzuru Tachikawa",
         cast: "Minami Takayama, Megumi Hayashibara",
         description: "Vụ án diễn ra tại cơ sở 'Pacific Buoy' của Interpol dưới biển. Tổ chức Áo Đen bắt cóc một nữ kỹ sư để nắm giữ hệ thống nhận diện khuôn mặt toàn cầu.",
-        poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80"
+        poster: "images/conan2.jpg"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const moviesData = [
         director: "Christopher Nolan",
         cast: "Christian Bale, Heath Ledger",
         description: "Khi mối đe dọa mang tên Joker tàn phá thành phố Gotham, Batman phải đối mặt với thử thách lớn nhất.",
-        poster: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=500&q=80"
+        poster: "images/batman.jpg"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const moviesData = [
         director: "Christopher Nolan",
         cast: "Leonardo DiCaprio, Joseph Gordon-Levitt",
         description: "Một tên trộm đánh cắp bí mật thông qua công nghệ chia sẻ giấc mơ được giao nhiệm vụ cấy ý tưởng.",
-        poster: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80"
+        poster: "images/inception.jpg"
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const moviesData = [
         director: "Christopher Nolan",
         cast: "Matthew McConaughey, Anne Hathaway",
         description: "Nhóm các nhà thám hiểm du hành qua một lỗ sâu trong không gian để đảm bảo sự sống còn cho loài người.",
-        poster: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=500&q=80"
+        poster: "images/interstellar.jpg"
     }
 ];
 
@@ -99,7 +99,6 @@ function setupGenres() {
         chk.addEventListener("change", filterAndSearchMovies);
     });
 }
-
 function filterAndSearchMovies() {
     const keyword = searchInput.value.toLowerCase().trim();
     
