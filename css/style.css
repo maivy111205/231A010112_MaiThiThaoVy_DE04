@@ -27,7 +27,6 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-
 header {
     background-color: var(--header-bg);
     padding: 15px 30px;
@@ -83,12 +82,16 @@ header .logo {
     font-weight: bold;
 }
 
+.prev-links ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+
 .prev-links a {
     color: var(--accent-color);
     text-decoration: none;
 }
 
-/* Main Content & Movie Grid */
 .content {
     padding: 20px;
 }
